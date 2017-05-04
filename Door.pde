@@ -7,8 +7,11 @@ class Door {
     this.h=50;
   }
   void display() { //draws the block
-    fill(153, 76, 0);
-    rect(x, y, w, h);
+    noFill();
+    stroke(255);
+    strokeWeight(4);
+    ellipse(x, y, w, h);
+    strokeWeight(1);
   }
   
   void goThruDoor(float fx, float fy, float fw, float fh){
